@@ -1,0 +1,748 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FORMA — Exceptional Residences For A Life Well Considered</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Top Announcement / Top Bar -->
+  <header class="site-header" id="siteHeader">
+    <div class="header-inner container">
+      <a href="#hero" class="brand-logo" data-nav="hero">
+        <span class="logo-text">FORMA</span>
+      </a>
+
+      <nav class="main-nav" id="mainNav">
+        <a href="#residences" class="nav-link" data-nav="residences">RESIDENCES</a>
+        <a href="#casa-oliva" class="nav-link" data-nav="casa-oliva">CASA OLIVA</a>
+        <a href="#studio" class="nav-link" data-nav="studio">STUDIO</a>
+        <a href="#journal" class="nav-link" data-nav="journal">JOURNAL</a>
+        <a href="#contact" class="nav-link" data-nav="contact">CONTACT</a>
+      </nav>
+
+      <div class="header-actions">
+        <button class="btn btn-outline-sm open-booking-btn" data-residence="Casa Oliva">BOOK A VIEWING</button>
+        <button class="mobile-menu-toggle" id="menuToggle" aria-label="Toggle Menu">
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Navigation Drawer -->
+  <div class="mobile-drawer" id="mobileDrawer">
+    <div class="drawer-header">
+      <span class="logo-text">FORMA</span>
+      <button class="drawer-close" id="drawerClose">&times;</button>
+    </div>
+    <div class="drawer-links">
+      <a href="#residences" class="drawer-link" data-nav="residences">RESIDENCES</a>
+      <a href="#casa-oliva" class="drawer-link" data-nav="casa-oliva">CASA OLIVA</a>
+      <a href="#studio" class="drawer-link" data-nav="studio">STUDIO</a>
+      <a href="#journal" class="drawer-link" data-nav="journal">JOURNAL</a>
+      <a href="#contact" class="drawer-link" data-nav="contact">CONTACT</a>
+    </div>
+    <div class="drawer-footer">
+      <p class="drawer-tagline">EXCEPTIONAL RESIDENCES FOR A LIFE WELL CONSIDERED</p>
+      <button class="btn btn-primary btn-full open-booking-btn" data-residence="Casa Oliva">BOOK A VIEWING</button>
+    </div>
+  </div>
+
+  <main>
+
+    <!-- SECTION 1: HERO / INTRO -->
+    <section class="section-hero" id="hero">
+      <div class="hero-bg-carousel">
+        <div class="hero-slide active" style="background-image: url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=2000&q=85');"></div>
+        <div class="hero-slide" style="background-image: url('https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=2000&q=85');"></div>
+        <div class="hero-slide" style="background-image: url('https://images.unsplash.com/photo-1613977257363-707ba9348227?auto=format&fit=crop&w=2000&q=85');"></div>
+      </div>
+      <div class="hero-overlay"></div>
+
+      <div class="container hero-content">
+        <div class="hero-meta-top">
+          <span class="meta-tag">MALLORCA, SPAIN</span>
+          <span class="meta-coords">39°43′ N &nbsp; 2°37′ E</span>
+        </div>
+
+        <div class="hero-titles">
+          <p class="hero-kicker">EXCEPTIONAL RESIDENCES FOR A MORE HUMAN TOMORROW.</p>
+          <h1 class="hero-headline">
+            HOMES<br>
+            SHAPED<br>
+            BY LIGHT.<br>
+            <span class="hero-subline">WHERE LIVING MEETS MEANING</span>
+          </h1>
+        </div>
+
+        <div class="hero-bottom-bar">
+          <div class="hero-stats">
+            <div class="stat-item">
+              <span class="stat-number">24</span>
+              <span class="stat-label">RESIDENCES</span>
+            </div>
+            <div class="stat-separator">/</div>
+            <div class="stat-item">
+              <span class="stat-number">09</span>
+              <span class="stat-label">DESIGN AWARDS</span>
+            </div>
+          </div>
+
+          <div class="hero-slide-nav">
+            <span class="carousel-counter" id="carouselCounter">01 / 03</span>
+            <div class="carousel-controls">
+              <button class="carousel-btn prev-btn" id="heroPrevBtn" aria-label="Previous Slide">←</button>
+              <button class="carousel-btn next-btn" id="heroNextBtn" aria-label="Next Slide">→</button>
+            </div>
+          </div>
+
+          <div class="hero-cta">
+            <a href="#casa-oliva" class="btn btn-primary">COME A LITTLE CLOSER</a>
+            <button class="btn btn-secondary open-booking-btn" data-residence="Casa Oliva">BOOK A VIEWING</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 2: MANIFESTO BAR -->
+    <section class="section-manifesto">
+      <div class="container manifesto-grid">
+        <div class="manifesto-col">
+          <span class="eyebrow">CRAFTED FOR EVERYDAY LIVING</span>
+          <h2 class="manifesto-text">LIGHT FILLS SPACES. LIFE UNFOLDS HERE.</h2>
+        </div>
+        <div class="manifesto-col">
+          <p class="manifesto-description">
+            We conceive residences in dialogue with the Balearic landscape. Built from local stone, warm timber, and floor-to-ceiling openings that invite the natural rhythm of dawn and twilight into everyday life.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 3: THE FORMA COLLECTION (CATALOG / RESIDENCES) -->
+    <section class="section-residences" id="residences">
+      <div class="container">
+        
+        <div class="section-header">
+          <div class="breadcrumb">
+            <span>HOME</span>
+            <span class="sep">/</span>
+            <span class="current">RESIDENCES</span>
+          </div>
+          <h2 class="section-title">THE FORMA COLLECTION</h2>
+          <p class="section-subtitle">
+            Considered architecture. Extraordinary settings. Discover our available residences, each shaped by the landscape and the way you live.
+          </p>
+        </div>
+
+        <!-- Filter Bar -->
+        <div class="filter-panel">
+          <div class="filters-grid">
+            <div class="filter-group">
+              <label for="filterLocation">LOCATION</label>
+              <select id="filterLocation" class="custom-select">
+                <option value="all">All Mallorca</option>
+                <option value="Deià">Deià</option>
+                <option value="Santa Maria">Santa Maria</option>
+                <option value="Port de Sóller">Port de Sóller</option>
+                <option value="Valldemossa">Valldemossa</option>
+              </select>
+            </div>
+
+            <div class="filter-group">
+              <label for="filterType">RESIDENCE TYPE</label>
+              <select id="filterType" class="custom-select">
+                <option value="all">All residences</option>
+                <option value="villa">Coastal Villa</option>
+                <option value="estate">Country Estate</option>
+                <option value="finca">Historic Finca</option>
+              </select>
+            </div>
+
+            <div class="filter-group">
+              <label for="filterBedrooms">BEDROOMS</label>
+              <select id="filterBedrooms" class="custom-select">
+                <option value="all">Any number</option>
+                <option value="3">3 Bedrooms</option>
+                <option value="4">4 Bedrooms</option>
+                <option value="5">5+ Bedrooms</option>
+              </select>
+            </div>
+
+            <div class="filter-group">
+              <label for="filterAvailability">AVAILABILITY</label>
+              <select id="filterAvailability" class="custom-select">
+                <option value="all">All statuses</option>
+                <option value="available" selected>Available now</option>
+                <option value="reserved">Under offer</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="filter-actions">
+            <button class="btn btn-primary" id="applyFiltersBtn">APPLY FILTERS</button>
+            <button class="btn-text" id="resetFiltersBtn">Reset</button>
+          </div>
+        </div>
+
+        <!-- Catalog Status Bar -->
+        <div class="catalog-status-bar">
+          <div class="results-count" id="resultsCount">04 AVAILABLE RESIDENCES</div>
+          <div class="sort-wrapper">
+            <label for="sortSelect">Sort by:</label>
+            <select id="sortSelect" class="sort-select">
+              <option value="featured">Featured ↓</option>
+              <option value="price-asc">Price: Low to High</option>
+              <option value="price-desc">Price: High to Low</option>
+              <option value="area-desc">Area: Largest</option>
+            </select>
+          </div>
+        </div>
+
+        <!-- Residences Cards Grid -->
+        <div class="residences-grid" id="residencesGrid">
+          
+          <!-- Card 1: Casa Oliva -->
+          <article class="residence-card" data-location="Deià" data-type="villa" data-bedrooms="4" data-price="4850000" data-area="385">
+            <div class="card-image-box">
+              <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1200&q=80" alt="Casa Oliva in Deià, Mallorca" loading="lazy">
+              <div class="card-tags">
+                <span class="card-tag">NEW RESIDENCE</span>
+                <span class="card-tag">COURTYARD LIVING</span>
+                <span class="card-tag">SEA VIEWS</span>
+                <span class="card-tag">READY TO MOVE IN</span>
+              </div>
+            </div>
+            <div class="card-body">
+              <div class="card-header-row">
+                <span class="card-location">DEIÀ, MALLORCA</span>
+                <span class="card-price">€4,850,000</span>
+              </div>
+              <h3 class="card-title">Casa Oliva</h3>
+              <p class="card-specs">4 bedrooms &nbsp; / &nbsp; 4 bathrooms &nbsp; / &nbsp; 385 m²</p>
+              <div class="card-footer-row">
+                <a href="#casa-oliva" class="btn btn-outline card-btn">VIEW RESIDENCE</a>
+                <button class="btn-text open-booking-btn" data-residence="Casa Oliva">Book a viewing →</button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 2: Can Terra -->
+          <article class="residence-card" data-location="Santa Maria" data-type="estate" data-bedrooms="3" data-price="3250000" data-area="290">
+            <div class="card-image-box">
+              <img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=1200&q=80" alt="Can Terra in Santa Maria, Mallorca" loading="lazy">
+              <div class="card-tags">
+                <span class="card-tag">COUNTRYSIDE</span>
+                <span class="card-tag">VINEYARD VIEWS</span>
+              </div>
+            </div>
+            <div class="card-body">
+              <div class="card-header-row">
+                <span class="card-location">SANTA MARIA, MALLORCA</span>
+                <span class="card-price">€3,250,000</span>
+              </div>
+              <h3 class="card-title">Can Terra</h3>
+              <p class="card-specs">3 bedrooms &nbsp; / &nbsp; 3 bathrooms &nbsp; / &nbsp; 290 m²</p>
+              <div class="card-footer-row">
+                <button class="btn btn-outline card-btn open-quickview-btn" data-id="can-terra">VIEW RESIDENCE</button>
+                <button class="btn-text open-booking-btn" data-residence="Can Terra">Book a viewing →</button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 3: Sa Roca -->
+          <article class="residence-card" data-location="Port de Sóller" data-type="villa" data-bedrooms="5" data-price="5400000" data-area="460">
+            <div class="card-image-box">
+              <img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=1200&q=80" alt="Sa Roca in Port de Sóller, Mallorca" loading="lazy">
+              <div class="card-tags">
+                <span class="card-tag">CLIFFSIDE</span>
+                <span class="card-tag">PANORAMIC SEA</span>
+              </div>
+            </div>
+            <div class="card-body">
+              <div class="card-header-row">
+                <span class="card-location">PORT DE SÓLLER, MALLORCA</span>
+                <span class="card-price">€5,400,000</span>
+              </div>
+              <h3 class="card-title">Sa Roca</h3>
+              <p class="card-specs">5 bedrooms &nbsp; / &nbsp; 5 bathrooms &nbsp; / &nbsp; 460 m²</p>
+              <div class="card-footer-row">
+                <button class="btn btn-outline card-btn open-quickview-btn" data-id="sa-roca">VIEW RESIDENCE</button>
+                <button class="btn-text open-booking-btn" data-residence="Sa Roca">Book a viewing →</button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 4: Can Serra -->
+          <article class="residence-card" data-location="Valldemossa" data-type="finca" data-bedrooms="3" data-price="2950000" data-area="265">
+            <div class="card-image-box">
+              <img src="https://images.unsplash.com/photo-1580587771525-78b9dba3b914?auto=format&fit=crop&w=1200&q=80" alt="Can Serra in Valldemossa, Mallorca" loading="lazy">
+              <div class="card-tags">
+                <span class="card-tag">HERITAGE FINCA</span>
+                <span class="card-tag">OLIVE GROVE</span>
+              </div>
+            </div>
+            <div class="card-body">
+              <div class="card-header-row">
+                <span class="card-location">VALLDEMOSSA, MALLORCA</span>
+                <span class="card-price">€2,950,000</span>
+              </div>
+              <h3 class="card-title">Can Serra</h3>
+              <p class="card-specs">3 bedrooms &nbsp; / &nbsp; 3 bathrooms &nbsp; / &nbsp; 265 m²</p>
+              <div class="card-footer-row">
+                <button class="btn btn-outline card-btn open-quickview-btn" data-id="can-serra">VIEW RESIDENCE</button>
+                <button class="btn-text open-booking-btn" data-residence="Can Serra">Book a viewing →</button>
+              </div>
+            </div>
+          </article>
+
+        </div>
+
+        <!-- Banner: Speak to Our Team -->
+        <div class="consultation-banner">
+          <div class="banner-text">
+            <h3>Your next chapter starts with a conversation.</h3>
+            <p>Tell us what home means to you. We’ll help you find it.</p>
+          </div>
+          <div class="banner-cta">
+            <button class="btn btn-primary open-booking-btn" data-residence="General Inquiry">SPEAK TO OUR TEAM</button>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SECTION 4: RESIDENCE DETAIL DEEP-DIVE (CASA OLIVA) -->
+    <section class="section-residence-detail" id="casa-oliva">
+      
+      <!-- Detail Header -->
+      <div class="container">
+        <div class="detail-top-nav">
+          <div class="breadcrumb">
+            <a href="#hero">HOME</a>
+            <span class="sep">/</span>
+            <a href="#residences">RESIDENCES</a>
+            <span class="sep">/</span>
+            <span class="current">CASA OLIVA</span>
+          </div>
+          <span class="status-pill">DEIÀ, MALLORCA · AVAILABLE</span>
+        </div>
+
+        <div class="detail-header-content">
+          <div class="detail-title-col">
+            <h1 class="residence-title">Casa Oliva</h1>
+            <p class="residence-price-tag">€4,850,000</p>
+          </div>
+          <div class="detail-action-col">
+            <button class="btn btn-primary open-booking-btn" data-residence="Casa Oliva">BOOK A VIEWING</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Main Showcase Gallery -->
+      <div class="showcase-gallery container">
+        <div class="gallery-primary">
+          <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1600&q=85" alt="Casa Oliva Main Terrace & Sea Infinity Pool" id="galleryMainImage">
+          <div class="gallery-caption">OPEN SPACES. AN OPEN HORIZON.</div>
+        </div>
+        <div class="gallery-secondary">
+          <div class="gallery-thumb" onclick="swapMainImage(this)">
+            <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=800&q=80" alt="Warm oak and stone open interior">
+            <span>Living Space</span>
+          </div>
+          <div class="gallery-thumb" onclick="swapMainImage(this)">
+            <img src="https://images.unsplash.com/photo-1600566753376-12c8ab7fb75b?auto=format&fit=crop&w=800&q=80" alt="Master suite with private terrace">
+            <span>Master Suite</span>
+          </div>
+          <div class="gallery-thumb" onclick="swapMainImage(this)">
+            <img src="https://images.unsplash.com/photo-1613977257363-707ba9348227?auto=format&fit=crop&w=800&q=80" alt="Local stone facade & Mediterranean garden">
+            <span>Exterior Architecture</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Technical Architecture Specs Grid -->
+      <div class="container">
+        <div class="specs-matrix">
+          <div class="spec-matrix-card">
+            <span class="spec-label">BEDROOMS</span>
+            <span class="spec-value">04</span>
+          </div>
+          <div class="spec-matrix-card">
+            <span class="spec-label">BATHROOMS</span>
+            <span class="spec-value">04</span>
+          </div>
+          <div class="spec-matrix-card">
+            <span class="spec-label">BUILT AREA</span>
+            <span class="spec-value">385 m²</span>
+          </div>
+          <div class="spec-matrix-card">
+            <span class="spec-label">PLOT SIZE</span>
+            <span class="spec-value">1,240 m²</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Editorial Narrative Section -->
+      <div class="container editorial-section">
+        <div class="editorial-grid">
+          
+          <div class="editorial-narrative">
+            <span class="eyebrow">A QUIETER KIND OF LUXURY</span>
+            <h2 class="editorial-headline">Between the mountains and the Mediterranean.</h2>
+            
+            <p class="editorial-lead">
+              Set above the coast of Deià, Casa Oliva is a home in conversation with its surroundings. Local stone, warm oak and generous glazing draw the landscape inside, while deep overhangs temper the Mediterranean light.
+            </p>
+            <p class="editorial-body">
+              Four en-suite bedrooms open to private terraces. At the heart of the house, an open-plan living space extends towards the infinity pool and uninterrupted sea views. Every detail is designed for a slower, more considered way of living.
+            </p>
+
+            <div class="quote-callout">
+              <span class="quote-quote">“</span>
+              <p>NATURE, IN EVERY DETAIL.</p>
+            </div>
+          </div>
+
+          <!-- Equipment & Features List -->
+          <div class="editorial-features">
+            <h3 class="features-title">THOUGHTFULLY EQUIPPED</h3>
+            <ul class="features-list">
+              <li>
+                <span class="feature-bullet">—</span>
+                <div class="feature-item">
+                  <strong>Infinity pool & sea-facing terrace</strong>
+                  <p>Unobstructed panoramic horizon with integrated stone sun-loungers.</p>
+                </div>
+              </li>
+              <li>
+                <span class="feature-bullet">—</span>
+                <div class="feature-item">
+                  <strong>Locally sourced stone & oak finishes</strong>
+                  <p>Hand-cut Mallorcan limestone paired with bespoke quarter-sawn oak carpentry.</p>
+                </div>
+              </li>
+              <li>
+                <span class="feature-bullet">—</span>
+                <div class="feature-item">
+                  <strong>Underfloor heating & climate control</strong>
+                  <p>Silent geothermal cooling and efficient zone-controlled temperature.</p>
+                </div>
+              </li>
+              <li>
+                <span class="feature-bullet">—</span>
+                <div class="feature-item">
+                  <strong>Landscaped Mediterranean garden</strong>
+                  <p>Mature olive groves, wild rosemary, and drought-tolerant local flora.</p>
+                </div>
+              </li>
+              <li>
+                <span class="feature-bullet">—</span>
+                <div class="feature-item">
+                  <strong>Private parking for two cars</strong>
+                  <p>Discreet gated carport with high-speed EV charging.</p>
+                </div>
+              </li>
+              <li>
+                <span class="feature-bullet">—</span>
+                <div class="feature-item">
+                  <strong>Energy rating A · Completed 2026</strong>
+                  <p>State-of-the-art sustainable insulation and solar array integration.</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Setting & Village Section -->
+      <div class="setting-section">
+        <div class="container">
+          <div class="setting-card">
+            <div class="setting-content">
+              <span class="eyebrow">THE SETTING</span>
+              <h2 class="setting-title">At home in Deià.</h2>
+              <p class="setting-description">
+                A village of artists, olive groves and stone-walled lanes, tucked into the UNESCO-listed Serra de Tramuntana. Walk to local restaurants, spend the afternoon at Cala Deià, and return to your own quiet horizon.
+              </p>
+              
+              <div class="setting-distances">
+                <div class="distance-pill">
+                  <span class="dist-place">Cala Deià</span>
+                  <span class="dist-time">· 8 min</span>
+                </div>
+                <div class="distance-sep">/</div>
+                <div class="distance-pill">
+                  <span class="dist-place">Sóller</span>
+                  <span class="dist-time">· 20 min</span>
+                </div>
+                <div class="distance-sep">/</div>
+                <div class="distance-pill">
+                  <span class="dist-place">Palma Airport</span>
+                  <span class="dist-time">· 45 min</span>
+                </div>
+              </div>
+            </div>
+            <div class="setting-image-box">
+              <img src="https://images.unsplash.com/photo-1533105079780-92b9be482077?auto=format&fit=crop&w=1200&q=80" alt="Deià and Serra de Tramuntana mountain setting">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Final Experience CTA -->
+      <div class="container final-experience-cta">
+        <div class="experience-box">
+          <div class="experience-text">
+            <h2>Some places need to be felt.</h2>
+            <p>Experience Casa Oliva with a personal, unhurried viewing.</p>
+          </div>
+          <button class="btn btn-primary open-booking-btn" data-residence="Casa Oliva">BOOK A VIEWING</button>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- SECTION 5: STUDIO / PHILOSOPHY -->
+    <section class="section-studio" id="studio">
+      <div class="container">
+        <div class="studio-grid">
+          <div class="studio-info">
+            <span class="eyebrow">STUDIO</span>
+            <h2 class="section-title">A place to belong.</h2>
+            <p class="studio-p">
+              FORMA is an architectural studio based in Palma and Deià. We design and deliver residences that celebrate silence, material permanence, and the Mediterranean landscape.
+            </p>
+            <p class="studio-p">
+              Each home is conceived as a singular work, respecting local topography and geological lineage while offering state-of-the-art contemporary comfort.
+            </p>
+            <div class="studio-contact-hint">
+              <p>PREFER A CONVERSATION?</p>
+              <a href="tel:+34971620480" class="contact-link">+34 971 620 480</a>
+              <a href="mailto:residences@forma.es" class="contact-link">residences@forma.es</a>
+            </div>
+          </div>
+          <div class="studio-visual">
+            <img src="https://images.unsplash.com/photo-1600566753376-12c8ab7fb75b?auto=format&fit=crop&w=1200&q=80" alt="FORMA architectural material study">
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- MODAL / VIEW: BOOK A VIEWING -->
+  <div class="modal-backdrop" id="bookingModal">
+    <div class="modal-dialog">
+      <button class="modal-close-btn" id="closeBookingModal" aria-label="Close dialog">&times;</button>
+      
+      <div class="modal-header-section">
+        <div class="breadcrumb modal-breadcrumb">
+          <span>HOME</span>
+          <span class="sep">/</span>
+          <span>RESIDENCES</span>
+          <span class="sep">/</span>
+          <span id="modalBreadcrumbResidence">CASA OLIVA</span>
+          <span class="sep">/</span>
+          <span class="current">BOOK A VIEWING</span>
+        </div>
+        <span class="modal-badge">A place to belong.</span>
+        <h2 class="modal-title">BOOK A VIEWING</h2>
+        <p class="modal-tagline">A place. A possibility. A new chapter.</p>
+        <p class="modal-intro">
+          Tell us a little about yourself and your preferred visit. Our team will confirm the details personally.
+        </p>
+        <p class="modal-required-hint">Fields marked * are required.</p>
+      </div>
+
+      <div class="modal-body-layout">
+        
+        <!-- Left: Form -->
+        <form id="viewingForm" class="viewing-form" novalidate>
+          
+          <div class="form-row two-cols">
+            <div class="form-field">
+              <label for="firstName">FIRST NAME *</label>
+              <input type="text" id="firstName" name="firstName" placeholder="Amelia" required>
+              <span class="error-msg">Please enter your first name</span>
+            </div>
+            <div class="form-field">
+              <label for="lastName">LAST NAME *</label>
+              <input type="text" id="lastName" name="lastName" placeholder="Hart" required>
+              <span class="error-msg">Please enter your last name</span>
+            </div>
+          </div>
+
+          <div class="form-row two-cols">
+            <div class="form-field">
+              <label for="emailAddress">EMAIL ADDRESS *</label>
+              <input type="email" id="emailAddress" name="emailAddress" placeholder="amelia.hart@email.com" required>
+              <span class="error-msg">Please enter a valid email</span>
+            </div>
+            <div class="form-field">
+              <label for="phoneNumber">PHONE NUMBER *</label>
+              <input type="tel" id="phoneNumber" name="phoneNumber" placeholder="+44 7700 900 124" required>
+              <span class="error-msg">Please enter your phone number</span>
+            </div>
+          </div>
+
+          <div class="form-field">
+            <label for="residenceSelect">RESIDENCE *</label>
+            <select id="residenceSelect" name="residence" class="custom-select" required>
+              <option value="Casa Oliva · Deià, Mallorca">Casa Oliva · Deià, Mallorca</option>
+              <option value="Can Terra · Santa Maria, Mallorca">Can Terra · Santa Maria, Mallorca</option>
+              <option value="Sa Roca · Port de Sóller, Mallorca">Sa Roca · Port de Sóller, Mallorca</option>
+              <option value="Can Serra · Valldemossa, Mallorca">Can Serra · Valldemossa, Mallorca</option>
+              <option value="General Portfolio Viewing">General Portfolio Consultation</option>
+            </select>
+          </div>
+
+          <div class="form-field">
+            <label>HOW WOULD YOU LIKE TO VISIT? *</label>
+            <div class="radio-options-group">
+              <label class="custom-radio">
+                <input type="radio" name="visitType" value="In person" checked>
+                <span class="radio-mark"></span>
+                <span class="radio-text">In person</span>
+              </label>
+              <label class="custom-radio">
+                <input type="radio" name="visitType" value="Virtual viewing">
+                <span class="radio-mark"></span>
+                <span class="radio-text">Virtual viewing</span>
+              </label>
+            </div>
+          </div>
+
+          <div class="form-row two-cols">
+            <div class="form-field">
+              <label for="preferredDate">PREFERRED DATE *</label>
+              <input type="date" id="preferredDate" name="preferredDate" value="2026-11-20" required>
+              <span class="error-msg">Please select a preferred date</span>
+            </div>
+            <div class="form-field">
+              <label for="preferredTime">PREFERRED TIME *</label>
+              <select id="preferredTime" name="preferredTime" class="custom-select" required>
+                <option value="10:30 · CET">10:30 · CET</option>
+                <option value="12:00 · CET">12:00 · CET</option>
+                <option value="15:00 · CET">15:00 · CET</option>
+                <option value="17:30 · CET (Sunset)">17:30 · CET (Sunset)</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-field">
+            <label for="additionalNotes">ANYTHING WE SHOULD KNOW? (OPTIONAL)</label>
+            <textarea id="additionalNotes" name="additionalNotes" rows="3" placeholder="We’re visiting Mallorca for the weekend and would love to explore the house and its surroundings."></textarea>
+          </div>
+
+          <div class="form-field checkbox-field">
+            <label class="custom-checkbox">
+              <input type="checkbox" id="privacyConsent" name="privacyConsent" required checked>
+              <span class="checkbox-mark"></span>
+              <span class="checkbox-label">
+                I agree to the Privacy Policy and consent to FORMA contacting me about this viewing. *
+              </span>
+            </label>
+            <span class="error-msg" id="privacyError">You must agree before submitting</span>
+          </div>
+
+          <div class="form-submit-row">
+            <button type="submit" class="btn btn-primary btn-full" id="submitViewingBtn">
+              REQUEST A VIEWING
+            </button>
+            <p class="form-disclaimer">
+              This is a viewing request, not a confirmed appointment. We’ll be in touch within one working day.
+            </p>
+          </div>
+
+        </form>
+
+        <!-- Right: Context & Direct Contact -->
+        <div class="modal-sidebar">
+          <div class="sidebar-box">
+            <h4>COURTYARD LIVING</h4>
+            <p>
+              Discover how a FORMA residence feels in person. Join us for a private viewing, at a time that works for you.
+            </p>
+          </div>
+
+          <div class="sidebar-contact-card">
+            <h4>PREFER A CONVERSATION?</h4>
+            <p class="contact-num"><a href="tel:+34971620480">+34 971 620 480</a></p>
+            <p class="contact-mail"><a href="mailto:residences@forma.es">residences@forma.es</a></p>
+          </div>
+
+          <div class="sidebar-location-card">
+            <span class="loc-country">MALLORCA, SPAIN</span>
+            <span class="loc-coords">39°43′ N &nbsp; 2°37′ E</span>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Success Screen -->
+      <div class="modal-success-state" id="modalSuccessState">
+        <div class="success-icon">✓</div>
+        <h3>Viewing Request Received</h3>
+        <p class="success-lead" id="successSummaryMessage">
+          Thank you, Amelia. We have received your viewing request for Casa Oliva.
+        </p>
+        <p class="success-note">
+          Our private residences advisor will review your preferred date and contact you within one business day with confirmation details.
+        </p>
+        <button class="btn btn-primary" id="successDoneBtn">BACK TO RESIDENCES</button>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- QUICK VIEW MODAL (FOR CAN TERRA, SA ROCA, CAN SERRA) -->
+  <div class="modal-backdrop" id="quickViewModal">
+    <div class="modal-dialog quickview-dialog">
+      <button class="modal-close-btn" id="closeQuickView">&times;</button>
+      <div id="quickViewContent">
+        <!-- Injected via JS -->
+      </div>
+    </div>
+  </div>
+
+  <!-- SITE FOOTER -->
+  <footer class="site-footer" id="contact">
+    <div class="container footer-inner">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <span class="logo-text">FORMA</span>
+          <p class="footer-sub">SPACES THAT MAKE A BETTER TOMORROW</p>
+        </div>
+        <div class="footer-contact">
+          <a href="tel:+34971620480">+34 971 620 480</a>
+          <a href="mailto:residences@forma.es">residences@forma.es</a>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div class="footer-meta">
+          <span>ARCHITECTURE &nbsp;/&nbsp; NATURE &nbsp;/&nbsp; LIVING</span>
+          <span class="footer-dot">·</span>
+          <span>© FORMA 2026</span>
+          <span class="footer-dot">/</span>
+          <a href="#privacy" class="footer-link">PRIVACY</a>
+        </div>
+        <div class="footer-quote">
+          <span>A QUIETER KIND OF LUXURY</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
